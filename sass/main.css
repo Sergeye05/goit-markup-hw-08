@@ -77,11 +77,6 @@ body {
   font-size: 14px;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -97,6 +92,11 @@ body {
   .container {
     max-width: 768px;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
