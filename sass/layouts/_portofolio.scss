@@ -13,7 +13,7 @@
 
 .portofolio-card {
 
-    width: 370px;
+    *width: 370px;
     height: 404px;
     background: var(--hero-title-color);
     border: 1px solid #EEEEEE;
@@ -21,7 +21,8 @@
     box-sizing: border-box;
     display: block;
     transition: transform var(--duration) var(--cubic-bezier);
-
+    
+        
 }
 .project-title {
     font-size: 18px;
