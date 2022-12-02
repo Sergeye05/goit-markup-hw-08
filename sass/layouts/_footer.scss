@@ -1,5 +1,4 @@
 .footer {
-
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,13 +6,20 @@
 }
 
 .footcont {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width:1200px) {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .contact {
-    min-width: 231px;
+   min-width: 231px;
     margin-right: 70px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo {
@@ -111,11 +117,15 @@
     fill: var(--hero-title-color);
 
 }
-
+.online-form {
+    display: block;
+    flex-wrap: wrap;
+}
 .online-field {
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 

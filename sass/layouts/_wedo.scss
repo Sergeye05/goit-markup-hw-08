@@ -1,6 +1,10 @@
 .section.we-do {
+    display: none;
     text-align: center;
     background: #f5f5f5;
+    @media screen and (min-width:1200px) {
+            display: flex;
+        }
 }
 
 

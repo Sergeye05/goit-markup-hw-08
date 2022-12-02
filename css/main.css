@@ -386,6 +386,11 @@ body {
 .menu-open {
   margin-left: 15px;
 }
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
 
 .menu-close {
   display: block;
@@ -427,6 +432,10 @@ body {
   text-decoration: none;
 }
 
+.mob-part2 {
+  display: inline-block;
+}
+
 .mob-contact-list {
   margin-bottom: 64px;
 }
@@ -459,6 +468,23 @@ body {
 
 .mob-soc-list {
   display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.menu-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
 }
 
 .mob-soc-link {
@@ -474,10 +500,25 @@ body {
   display: none;
   gap: 38px;
 }
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+  }
+}
 
 .contact-list {
   display: none;
   gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+  }
 }
 
 .header-logo {
@@ -741,8 +782,14 @@ body {
 }
 
 .section.we-do {
+  display: none;
   text-align: center;
   background: #f5f5f5;
+}
+@media screen and (min-width: 1200px) {
+  .section.we-do {
+    display: flex;
+  }
 }
 
 .we-do-item {
@@ -802,7 +849,6 @@ body {
   background: var(--hero-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /*width: calc((100% - 90px)/4);*/
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -1010,13 +1056,22 @@ body {
 }
 
 .footcont {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footcont {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .contact {
   min-width: 231px;
   margin-right: 70px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {
@@ -1105,6 +1160,11 @@ body {
 
 .footer-soc-icon {
   fill: var(--hero-title-color);
+}
+
+.online-form {
+  display: block;
+  flex-wrap: wrap;
 }
 
 .online-field {
