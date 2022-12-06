@@ -36,8 +36,10 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="menu-open" data-menu-open>0
-    
+      <button type="button" class="menu-open" data-menu-open>
+        <svg class="open-menu-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
       </button>
       <div class="header-contact">
          <ul class="contact-list list">
@@ -72,7 +74,7 @@
       
       <div class="mob-menu-container">
     <button type="button" class="menu-close" data-menu-close>
-       <svg class="modal-close-icon" width="18" height="18">
+       <svg class="modal-close-icon" width="19" height="19">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
     </button>
@@ -200,10 +202,17 @@
       </section>
        <section class="section we-do">
         <div class="container">
-           <h2 class="section-title">Чим ми займаємося</h2>
+           <h2 class="section-title we-do">Чим ми займаємося</h2>
         <ul class="we-do-list list">
           <li class="we-do-item">
             <div class="div-we-do">
+              <picture>
+                <source 
+                srcset= "
+                ./images/desk-1x.jpg  1x ,  
+                ./images/desk-2x.jpg  2x "
+                media="(min-width: 1200px)"
+                />
                <img
               class="we-do-img"
               src="./images/img-1.jpg"
@@ -211,25 +220,30 @@
               width="370"
               height="294"
             />
+             </picture>
             </div> 
             <div class="div2-we-do">
               <h3 class="we-do-text">Десктопні додатки</h3>
-            </div>
-           
-           
-            
-            
+            </div> 
           </li>
 
           <li class="we-do-item">
             <div class="div-we-do">
+               <picture>
+                <source 
+                srcset= "
+                ./images/mob-1x.jpg  1x ,  
+                ./images/mob-2x.jpg  2x "
+                media="(min-width: 1200px)"
+                />
             <img
               class="we-do-img"
-              src="./images/img-2.jpg"
+              src="./images/img-3.jpg"
               alt="Робота зі смартфоном"
               width="370"
               height="294"
             />
+            </picture>
               </div> 
             <div class="div2-we-do">
               <h3 class="we-do-text">Мобільні додатки</h3>
@@ -237,13 +251,21 @@
           </li>
           <li class="we-do-item">
              <div class="div-we-do">
+               <picture>
+                <source 
+                srcset= "
+                ./images/design-1x.jpg  1x ,  
+                ./images/design-2x.jpg  2x "
+                media="(min-width: 1200px)"
+                />
             <img
               class="we-do-img"
-              src="./images/img-3.jpg"
+              src="./images/img-2.jpg"
               alt="Робота на планшеті"
               width="370"
               height="294"
             />
+            </picture>
               </div> 
             <div class="div2-we-do">
               <h3 class="we-do-text">Дизайнерські рішення</h3>
@@ -264,12 +286,14 @@
                 ./images/team1-2x.jpg  2x "
                 media="(min-width: 1200px)"
                 />
+              
                 <source 
                srcset="
                ./images/team1-tab-1x.jpg 1x, 
                ./images/team1-tab-2x.jpg 2x "
                 media="(min-width: 768px)"
                 />
+              
                 <source 
                 srcset="
                 ./images/team1-mob-1x.jpg 1x, 
@@ -278,9 +302,9 @@
                 />
             
                 <img
-                src="./images/team1-mob-2x.jpg"
+                src="./images/img-4.jpg"
                 alt="Усміхнений хлопець в окулярах"
-                width="270"
+                width="450"
                 />
 
               </picture>
@@ -341,9 +365,9 @@
                 media="(min-width: 320px)"
                 />
                 <img
-                src="./images/team2-1x.jpg"
+                src="./images/img-5.jpg"
                 alt="Усміхнена дівчина в окулярах"
-                width="270"
+                width="450"
                 
               />
               </picture>
@@ -404,9 +428,9 @@
                 media="(min-width: 320px)"
                 />
                 <img
-                src="./images/team3-1x.jpg"
+                src="./images/img-6.jpg"
                 alt="Усміхнений хлопець"
-                width="270"
+                width="450"
                
               />
               </picture>
@@ -467,9 +491,9 @@
                 media="(min-width: 320px)"
                 />
                 <img
-                src="./images/team4-1x.jpg"
+                src="./images/img-7.jpg"
                 alt="Хлопець в окулярах з посмішкою"
-                width="270"
+                width="450"
               
               />
               </picture>
@@ -564,7 +588,8 @@
     </main>
       <footer class="footer">
       <div class="container footcont">
-        <div class="contact">
+        <div class="footer-mob">
+          <div class="contact">
           <a class="footer-logo" href="./index.html">
           Web<span class="footer-logo-studio">Studio</a>
        <address class="address style">
@@ -630,6 +655,8 @@
               </a></li>
               </ul>
           </div>
+        </div>
+        
           <form class="online-form">
               <h3 class="footer-title">підпишіться на розсилку</h3>
             <div class="online-field">

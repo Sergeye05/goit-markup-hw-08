@@ -366,7 +366,7 @@ body {
 }
 
 .header-logo {
-  margin-right: 93px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -430,6 +430,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: #212121;
 }
 
 .mob-part2 {
@@ -442,6 +443,16 @@ body {
 
 .mob-contact-soc-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.open-menu-icon {
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 22px;
+  top: 22px;
 }
 
 .mob-contact-tel {
@@ -487,6 +498,19 @@ body {
   cursor: pointer;
 }
 
+.mob-soc-item:not(:first-child) {
+  margin-left: 20px;
+  position: relative;
+}
+.mob-soc-item:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  left: 10px;
+  height: 22px;
+  width: 2px;
+  border-color: rgba(33, 33, 33, 0.2);
+}
+
 .mob-soc-link {
   font-weight: 500;
   font-size: 18px;
@@ -506,18 +530,23 @@ body {
   }
 }
 
-.contact-list {
+.contact-list.list {
   display: none;
-  gap: 50px;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
-  .contact-list {
-    display: block;
+  .contact-list.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact-list {
+  .contact-list.list {
     display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -743,10 +772,15 @@ body {
   color: var(--section-title-color);
   width: 270px;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title-advantage {
+    text-align: left;
+  }
 }
 
 .advantage-item {
-  /*width: calc((100% - 90px)/4);*/
   width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -782,13 +816,16 @@ body {
 }
 
 .section.we-do {
-  display: none;
   text-align: center;
-  background: #f5f5f5;
+  background: var(--hero-title-color);
+}
+
+.section-title.we-do {
+  display: none;
 }
 @media screen and (min-width: 1200px) {
-  .section.we-do {
-    display: flex;
+  .section-title.we-do {
+    display: inherit;
   }
 }
 
@@ -798,10 +835,15 @@ body {
 }
 
 .we-do-list {
-  display: flex;
+  display: none;
   justify-content: center;
   justify-content: space-between;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .we-do-list {
+    display: flex;
+  }
 }
 
 .div-we-do {
@@ -1067,6 +1109,12 @@ body {
   }
 }
 
+.footer-mob {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
 .contact {
   min-width: 231px;
   margin-right: 70px;
@@ -1171,6 +1219,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .online-input {

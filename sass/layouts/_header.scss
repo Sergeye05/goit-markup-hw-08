@@ -10,7 +10,7 @@
 }
 
 .header-logo {
-    margin-right: 93px;
+    margin-right: 88px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -72,6 +72,7 @@ margin-bottom: 32px;
     text-align: center;
     letter-spacing: 0.02em;
     text-decoration: none;
+    color: #212121;
 }
 
 .mob-part2 {
@@ -85,6 +86,17 @@ margin-bottom: 64px;
     margin-bottom: 32px;
 } 
 
+.open-menu-icon {
+    
+    width: 24px;
+        height: 16px;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 22px;
+        top: 22px;
+       
+}
 
 .mob-contact-tel {
 font-family: 'Roboto';
@@ -130,7 +142,20 @@ font-family: 'Roboto';
         cursor: pointer;
 }
 
-
+.mob-soc-item {
+    &:not(:first-child) {
+        margin-left: 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 10px;
+            height: 22px;
+            width: 2px;
+            border-color: rgba(33, 33, 33, 0.2);
+        }
+    }
+}
 
 
 .mob-soc-link {
@@ -141,6 +166,7 @@ font-family: 'Roboto';
      color: var(--accent-color);
     text-decoration: none;
 }
+
 .header-list {
     display: none;
     gap: 38px;
@@ -151,15 +177,20 @@ font-family: 'Roboto';
 
 }
 
-.contact-list {
+.contact-list.list {
     display: none;
-    gap: 50px;
+    gap: 30px;
     @media screen and (min-width:768px) {
-            display: block;
-           
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: start;
         }
    @media screen and (min-width:1200px) {
        display: flex;
+       flex-direction: row;
+       gap: 30px;
+      
    }
 }
 

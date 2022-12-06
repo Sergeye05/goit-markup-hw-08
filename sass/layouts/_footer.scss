@@ -14,7 +14,12 @@
             align-items: baseline;
         }
 }
-
+.footer-mob {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 60px;
+    
+}
 .contact {
    min-width: 231px;
     margin-right: 70px;
@@ -122,9 +127,10 @@
     flex-wrap: wrap;
 }
 .online-field {
-    display: flex;
+  display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 
 
 }
